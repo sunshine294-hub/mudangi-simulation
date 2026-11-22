@@ -49,13 +49,13 @@ def active_services(read, day: date) -> set[str]:
         for row in read("calendar.txt"):
             if row["start_date"] <= ymd <= row["end_date"] and row[weekday] == "1":
                 services.add(row["service_id"])
-    except KeyError:  # calendar.txt 없음
+    except (KeyError, FileNotFoundError):  # calendar.txt 없음 (zip은 KeyError, 폴더는 FileNotFoundError)
         pass
     try:
         for row in read("calendar_dates.txt"):
             if row["date"] == ymd:
                 (services.add if row["exception_type"] == "1" else services.discard)(row["service_id"])
-    except KeyError:  # calendar_dates.txt 없음
+    except (KeyError, FileNotFoundError):  # calendar_dates.txt 없음 (zip은 KeyError, 폴더는 FileNotFoundError)
         pass
     return services
 

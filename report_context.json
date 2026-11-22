@@ -3,25 +3,156 @@
  "gtfs": {
   "stops": 9,
   "routes": 2,
-  "trips": 543,
-  "stop_times": 2449
+  "trips": 234,
+  "stop_times": 1053,
+  "patterns": 4,
+  "mudangi": 220,
+  "scenario_trips": 260
  },
  "validator": {
-  "version": "8.0.1",
-  "feeds": 44,
-  "executions": 88
+  "errors": 0,
+  "warnings": 245,
+  "codes": [
+   "WARNING:mixed_case_recommended_field"
+  ],
+  "demand_rows": 3490
  },
- "routing": {
-  "queries_per_policy": 100,
-  "comparisons": 300,
-  "maximum_arrival_difference_s": 0
+ "raptor": {
+  "selection": {
+   "seed": 20261121,
+   "source": "demand.csv",
+   "bands": [
+    [
+     "08:20-11:30",
+     35
+    ],
+    [
+     "11:30-13:00",
+     35
+    ],
+    [
+     "13:00-17:30",
+     30
+    ]
+   ]
+  },
+  "pairs": 7,
+  "current": {
+   "n": 100,
+   "passed": 100,
+   "reached": 100,
+   "max_diff_s": 0
+  },
+  "lunch5": {
+   "n": 100,
+   "passed": 100,
+   "reached": 100,
+   "max_diff_s": 0
+  },
+  "before_after": {
+   "08:20-11:30": {
+    "n": 35,
+    "median_current": 5.23,
+    "median_lunch5": 5.23,
+    "mean_current": 5.32,
+    "mean_lunch5": 5.32,
+    "faster": 0,
+    "slower": 0
+   },
+   "11:30-13:00": {
+    "n": 35,
+    "median_current": 8.4,
+    "median_lunch5": 6.08,
+    "mean_current": 9.21,
+    "mean_lunch5": 6.33,
+    "faster": 19,
+    "slower": 0
+   },
+   "13:00-17:30": {
+    "n": 30,
+    "median_current": 7.1850000000000005,
+    "median_lunch5": 7.1850000000000005,
+    "mean_current": 6.64,
+    "mean_lunch5": 6.64,
+    "faster": 0,
+    "slower": 0
+   }
+  },
+  "strict": {
+   "n": 100,
+   "passed": 97,
+   "reached": 100,
+   "max_diff_s": 300,
+   "example": {
+    "query_id": 1,
+    "origin": "U01",
+    "destination": "U04",
+    "departure": "08:20:00",
+    "own_arrival": "08:26:32",
+    "ref_arrival": "08:24:32",
+    "diff_s": 120,
+    "own_path": "U01>U04@08:22:00",
+    "ref_path": "U01>U04@08:20:00"
+   }
+  }
  },
- "raptor100": {
-  "n": 100,
-  "reached": 76,
-  "unreach": 24,
-  "maxdiff": 0,
-  "pass": 100
+ "routecheck": {
+  "nodes": 1978,
+  "edges": 6804,
+  "vehicle_edges": 2434,
+  "segments": [
+   {
+    "seg": "U01-U02",
+    "road_m": 575,
+    "photo_m": 590,
+    "photo_s": 137,
+    "via": true
+   },
+   {
+    "seg": "U02-U03",
+    "road_m": 281,
+    "photo_m": 290,
+    "photo_s": 63,
+    "via": false
+   },
+   {
+    "seg": "U03-U04",
+    "road_m": 246,
+    "photo_m": 250,
+    "photo_s": 65,
+    "via": false
+   },
+   {
+    "seg": "D01-D02",
+    "road_m": 249,
+    "photo_m": 250,
+    "photo_s": 72,
+    "via": false
+   },
+   {
+    "seg": "D02-D03",
+    "road_m": 159,
+    "photo_m": 160,
+    "photo_s": 40,
+    "via": false
+   },
+   {
+    "seg": "D03-D04",
+    "road_m": 420,
+    "photo_m": 420,
+    "photo_s": 93,
+    "via": true
+   },
+   {
+    "seg": "D04-D05",
+    "road_m": 134,
+    "photo_m": 130,
+    "photo_s": 31,
+    "via": false
+   }
+  ],
+  "u01u02_shortest_m": 541,
+  "photo_date": "2026-10-28"
  },
  "dashboard": "index.html",
  "prev": null

@@ -107,16 +107,18 @@ def stop_map():
     for d, c, lab, off in [('U', '#1f7a8c', '상행 정류장', (-6, 6)), ('D', '#b8860b', '하행 정류장', (6, -11))]:
         p = [q for q in pts if q['stop_id'].startswith(d)]
         x, y = [float(q['stop_lon']) for q in p], [float(q['stop_lat']) for q in p]
-        ax.plot(x, y, color=c, ls='--', lw=1.2, alpha=.8)
+        road = np.array(json.loads((PROJECT / 'html_sim/data.json').read_text(encoding='utf-8'))['paths'][d.replace('U', 'UP').replace('D', 'DOWN')])
+        ax.plot(road[:, 0], road[:, 1], color=c, lw=1.6, alpha=.85)
         ax.scatter(x, y, s=45, color=c, ec='white', lw=1, zorder=3, label=lab)
         for q, xi, yi in zip(p, x, y):
             ax.annotate(f"{q['stop_id']} {'하행 종점' if q['stop_id'] == 'D05' else q['stop_name'].rsplit(' ', 1)[0]}", (xi, yi), xytext=off, textcoords='offset points',
                         fontsize=7.5, color=c, ha='right' if d == 'U' else 'left', bbox=dict(fc='white', ec='none', alpha=.8, pad=.6), zorder=4)
-    xs = [float(q['stop_lon']) for q in pts]; ys = [float(q['stop_lat']) for q in pts]
+    allp = [pt for d in ('UP', 'DOWN') for pt in json.loads((PROJECT / 'html_sim/data.json').read_text(encoding='utf-8'))['paths'][d]]
+    xs = [float(q['stop_lon']) for q in pts] + [x for x, _ in allp]; ys = [float(q['stop_lat']) for q in pts] + [y for _, y in allp]
     ax.set_xlim(min(xs) - .0009, max(xs) + .0014); ax.set_ylim(min(ys) - .0005, max(ys) + .0005)
     ax.set_aspect(1 / np.cos(np.radians(np.mean(ys)))); ax.set_xticks([]); ax.set_yticks([])
     ax.legend(loc='upper left', fontsize=7.5)
-    ax.text(.99, .01, '점선: 정차 순서를 이은 직선(실제 도로 경로 아님) · 지도 © OpenStreetMap contributors', transform=ax.transAxes,
+    ax.text(.99, .01, '선: 도로망 위 운행 경로 · 지도 © OpenStreetMap contributors', transform=ax.transAxes,
             ha='right', va='bottom', fontsize=6.5, color='#5b6770', bbox=dict(fc='white', ec='none', alpha=.9, pad=1))
     fig.savefig(FIG / 'fig2_stop_map.png', dpi=200); plt.close(fig)
 

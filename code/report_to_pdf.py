@@ -1,4 +1,4 @@
-"""report.md -> report.html -> report.pdf (Chrome headless). Course rule: PDF, 15 pages or fewer, 11pt or smaller.
+"""report.md -> report.html -> report.pdf (Chrome headless). Course rule: PDF, 15 pages or fewer, every font 11pt or smaller (headings included).
 
     python code/report_to_pdf.py
 
@@ -14,9 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'submission' if (ROOT / 'submission').exists() else ROOT  # repo layout, else zip root
 import os, shutil  # noqa: E401
 CHROME = os.environ.get('CHROME') or shutil.which('chrome') or shutil.which('google-chrome') or r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-CSS = """body{font-family:'Malgun Gothic',sans-serif;font-size:10.5pt;line-height:1.55;margin:0}
-h1{font-size:16pt;margin:0 0 4px}h2{font-size:13pt;margin:18px 0 6px;border-bottom:1px solid #999}
-h3{font-size:11.5pt;margin:12px 0 4px}h4{font-size:10.5pt;margin:10px 0 4px}p{margin:4px 0 8px;text-align:justify}
+CSS = """body{font-family:'Malgun Gothic',sans-serif;font-size:10pt;line-height:1.55;margin:0}
+h1{font-size:11pt;margin:0 0 4px}h2{font-size:11pt;margin:18px 0 6px;border-bottom:1px solid #999}
+h3{font-size:10.5pt;margin:12px 0 4px}h4{font-size:10pt;margin:10px 0 4px}p{margin:4px 0 8px;text-align:justify}
 table{border-collapse:collapse;margin:6px 0 10px;font-size:9pt}th,td{border:1px solid #aaa;padding:2px 6px}th{background:#eee}
 td:not(:first-child){text-align:right}img{max-width:100%;display:block;margin:6px auto}figcaption{text-align:center;font-size:9pt;margin-bottom:8px}
 ul{margin:4px 0 8px 18px;padding:0}li{margin:2px 0}@page{size:A4;margin:18mm 16mm}"""

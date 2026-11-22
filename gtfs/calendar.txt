@@ -1,3 +1,2 @@
 service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-OBS_MON,1,0,0,0,0,0,0,20261109,20261113
-PLAN_TUE_FRI,0,1,1,1,1,0,0,20261109,20261113
+WEEKDAY,1,1,1,1,1,0,0,20261109,20261231

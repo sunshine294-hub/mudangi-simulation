@@ -1,0 +1,3 @@
+route_id,agency_id,route_short_name,route_long_name,route_type
+MUDANGI,MUDANGI,무당이,교내셔틀,3
+GIL,GIL,길병원버스,교내 구간,3

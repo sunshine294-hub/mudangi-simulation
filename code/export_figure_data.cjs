@@ -33,7 +33,10 @@ for (const id of ['S0', 'S2', 'S1', 'S5']) {
 // demand.csv: the seed-42 requests every scenario receives; all rows are estimated (built to match aggregate observations).
 const hms = s => [s / 3600, s % 3600 / 60, s % 60].map(x => String(Math.floor(x)).padStart(2, '0')).join(':');
 const csvCell = v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
-fs.writeFileSync(path.join(OUT, 'demand.csv'), '﻿request_id,origin,destination,ready_time,ready_seconds,source,reason\n' +
-  plan.rows.slice().sort((a, b) => a.ready - b.ready).map(r => [r.id, r.origin, r.destination, hms(Math.round(r.ready)), Math.round(r.ready), 'estimated', r.reason || r.activityCategory || ''].map(csvCell).join(',')).join('\n') + '\n');
+// The first five columns follow the textbook demand contract (smartmob.data.validate_demand): request_time in minutes after midnight, stop coordinates.
+const xy = Object.fromEntries(data.stops.map(s => [s.id || s.stop_id, [s.lat ?? s.stop_lat, s.lon ?? s.stop_lon]]));
+fs.writeFileSync(path.join(OUT, 'demand.csv'), '﻿request_time,origin_lat,origin_lon,dest_lat,dest_lon,request_id,origin,destination,ready_time,ready_seconds,source,reason\n' +
+  plan.rows.slice().sort((a, b) => a.ready - b.ready).map(r => [(Math.round(r.ready) / 60).toFixed(2), ...xy[r.origin], ...xy[r.destination],
+    r.id, r.origin, r.destination, hms(Math.round(r.ready)), Math.round(r.ready), 'estimated', r.reason || r.activityCategory || ''].map(csvCell).join(',')).join('\n') + '\n');
 fs.writeFileSync(path.join(OUT, 'figure_data_20261120.json'), JSON.stringify({ seed: SEED, window: [START, END], demandBins: bins, scenarios }));
 console.log('ok', bins.length, Object.keys(scenarios));

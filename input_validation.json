@@ -1,0 +1,44 @@
+{
+ "validator": "MobilityData gtfs-validator 8.0.1",
+ "service_date": "2026-11-09",
+ "gtfs": {
+  "validate_feed": "pass",
+  "stops": 9,
+  "routes": 2,
+  "trips": 234,
+  "stop_times": 1053,
+  "route_type": {
+   "시외버스": 2
+  },
+  "mobilitydata": {
+   "errors": 0,
+   "warnings": 245,
+   "infos": 0,
+   "notice_codes": [
+    "WARNING:mixed_case_recommended_field"
+   ]
+  }
+ },
+ "gtfs_scenario": {
+  "validate_feed": "pass",
+  "stops": 9,
+  "routes": 2,
+  "trips": 260,
+  "stop_times": 1170,
+  "route_type": {
+   "시외버스": 2
+  },
+  "mobilitydata": {
+   "errors": 0,
+   "warnings": 271,
+   "infos": 0,
+   "notice_codes": [
+    "WARNING:mixed_case_recommended_field"
+   ]
+  }
+ },
+ "demand": {
+  "validate_demand": "pass",
+  "rows": 3490
+ }
+}

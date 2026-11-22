@@ -1,0 +1,3 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang
+MUDANGI,가천대학교 무당이,https://www.gachon.ac.kr/,Asia/Seoul,ko
+GIL,길병원버스,https://www.gilhospital.com/,Asia/Seoul,ko
