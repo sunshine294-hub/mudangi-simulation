@@ -1,0 +1,10 @@
+stop_id,stop_name,stop_lat,stop_lon,direction_id,direction_label,coordinate_source,coordinate_status,stop_status,limitation
+U01,반도체대학 상행,37.450910685189506,127.12748730761928,0,상행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증
+U02,교육대학 상행,37.45228920302517,127.1316260941507,0,상행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증
+U03,학생회관 상행,37.453534115232685,127.13428423499434,0,상행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증
+U04,AI공학관 상행,37.45552495644832,127.13463251309572,0,상행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증
+D01,AI공학관 하행,37.45526361834699,127.13467160238947,1,하행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증
+D02,학생회관 하행,37.45338584602716,127.13393361002973,1,하행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증
+D03,교육대학 하행,37.45265767045353,127.1324743765298,1,하행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증
+D04,예술체육대학 하행,37.45195444915684,127.12878877656252,1,하행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증
+D05,마지막 하차지점 하행,37.45166528827905,127.12748293746297,1,하행,user_report_kakao_map_click_20261104,user_report_map_click,user_reported_direction_stop,사용자가 지도에서 선택한 방향별 정차 위치; GPS 실측 오차 미검증

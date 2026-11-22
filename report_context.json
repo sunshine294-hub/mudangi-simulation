@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-22",
+ "gtfs": {
+  "stops": 9,
+  "routes": 2,
+  "trips": 543,
+  "stop_times": 2449
+ },
+ "validator": {
+  "version": "8.0.1",
+  "feeds": 44,
+  "executions": 88
+ },
+ "routing": {
+  "queries_per_policy": 100,
+  "comparisons": 300,
+  "maximum_arrival_difference_s": 0
+ },
+ "raptor100": {
+  "n": 100,
+  "reached": 76,
+  "unreach": 24,
+  "maxdiff": 0,
+  "pass": 100
+ },
+ "dashboard": "index.html",
+ "prev": null
+}

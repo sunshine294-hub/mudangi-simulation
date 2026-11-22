@@ -1,0 +1,159 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "segment_id": "D01-D02",
+    "direction": "하행",
+    "distance_km": "0.25",
+    "geometry_note": "정류장 사이 직선(도로 경로 아님)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      127.13467160238947,
+      37.45526361834699
+     ],
+     [
+      127.13393361002973,
+      37.45338584602716
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "segment_id": "D02-D03",
+    "direction": "하행",
+    "distance_km": "0.16",
+    "geometry_note": "정류장 사이 직선(도로 경로 아님)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      127.13393361002973,
+      37.45338584602716
+     ],
+     [
+      127.1324743765298,
+      37.45265767045353
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "segment_id": "D03-D04",
+    "direction": "하행",
+    "distance_km": "0.42",
+    "geometry_note": "정류장 사이 직선(도로 경로 아님)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      127.1324743765298,
+      37.45265767045353
+     ],
+     [
+      127.12878877656252,
+      37.45195444915684
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "segment_id": "D04-D05",
+    "direction": "하행",
+    "distance_km": "0.13",
+    "geometry_note": "정류장 사이 직선(도로 경로 아님)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      127.12878877656252,
+      37.45195444915684
+     ],
+     [
+      127.12748293746297,
+      37.45166528827905
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "segment_id": "U01-U02",
+    "direction": "상행",
+    "distance_km": "0.59",
+    "geometry_note": "정류장 사이 직선(도로 경로 아님)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      127.12748730761928,
+      37.450910685189506
+     ],
+     [
+      127.1316260941507,
+      37.45228920302517
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "segment_id": "U02-U03",
+    "direction": "상행",
+    "distance_km": "0.29",
+    "geometry_note": "정류장 사이 직선(도로 경로 아님)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      127.1316260941507,
+      37.45228920302517
+     ],
+     [
+      127.13428423499434,
+      37.453534115232685
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "segment_id": "U03-U04",
+    "direction": "상행",
+    "distance_km": "0.25",
+    "geometry_note": "정류장 사이 직선(도로 경로 아님)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      127.13428423499434,
+      37.453534115232685
+     ],
+     [
+      127.13463251309572,
+      37.45552495644832
+     ]
+    ]
+   }
+  }
+ ]
+}

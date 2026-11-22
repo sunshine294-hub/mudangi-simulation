@@ -1,0 +1,149 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "U01",
+    "stop_name": "반도체대학 상행",
+    "direction": "상행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.12748730761928,
+     37.450910685189506
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "U02",
+    "stop_name": "교육대학 상행",
+    "direction": "상행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.1316260941507,
+     37.45228920302517
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "U03",
+    "stop_name": "학생회관 상행",
+    "direction": "상행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.13428423499434,
+     37.453534115232685
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "U04",
+    "stop_name": "AI공학관 상행",
+    "direction": "상행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.13463251309572,
+     37.45552495644832
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "D01",
+    "stop_name": "AI공학관 하행",
+    "direction": "하행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.13467160238947,
+     37.45526361834699
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "D02",
+    "stop_name": "학생회관 하행",
+    "direction": "하행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.13393361002973,
+     37.45338584602716
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "D03",
+    "stop_name": "교육대학 하행",
+    "direction": "하행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.1324743765298,
+     37.45265767045353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "D04",
+    "stop_name": "예술체육대학 하행",
+    "direction": "하행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.12878877656252,
+     37.45195444915684
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "stop_id": "D05",
+    "stop_name": "마지막 하차지점 하행",
+    "direction": "하행",
+    "coordinate_note": "본인이 카카오맵에서 지정한 위치(GPS 측정 아님)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     127.12748293746297,
+     37.45166528827905
+    ]
+   }
+  }
+ ]
+}
